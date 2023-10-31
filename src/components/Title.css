@@ -1,0 +1,30 @@
+.menu-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+}
+
+.menu-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-logo img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.menu-nav{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-nav label{
+    display: block;
+}
+
+label a{
+    color: var(--dark-green);
+}

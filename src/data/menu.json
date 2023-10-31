@@ -1,0 +1,37 @@
+{
+    "maduro":{
+        "id":"Maduro",
+        "description": "lorem ipsum",
+        "price": "$15.000"
+    },
+    "sancocho":{
+        "id":"Sancocho",
+        "description": "lorem ipsum",
+        "price": "$20.000"
+    },
+    "chorizo":{
+        "id":"Chorizo",
+        "description": "lorem ipsum",
+        "price": "$12.000"
+    },
+    "bandeja paisa":{
+        "id":"Bandeja Paisa",
+        "description": "lorem ipsum",
+        "price": "$25.000"
+    },
+    "arroz con pollo":{
+        "id":"Arroz con Pollo",
+        "description": "lorem ipsum",
+        "price": "$18.000"
+    },
+    "arroz chino":{
+        "id":"Arroz Chino",
+        "description":"lorem ipsum",
+        "price":"$19.000"
+    },
+    "bondiola":{
+        "id":"Bondiola",
+        "description":"lorem ipsum",
+        "price":"$14.000"
+    }
+}

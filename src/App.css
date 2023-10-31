@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root{
+    font-family: "Press Start 2P&dispaly", serif;
+    --white: #f2f7f5;
+    --dark-green: #00473e;
+    --light-back: #475d5b;
+    --yellow: #faae2b;
+    --light-pink: #ffa8ba;
+    --light-red: #fa5246;
+    --ebony-50: #e8f0ff;
+    --ebony-100: #d5e4ff;
+    --ebony-200: #b3cbff;
+    --ebony-300: #86a8ff;
+    --ebony-400: #5774ff;
+    --ebony-500: #3042ff;
+    --ebony-600: #0e0dff;
+    --ebony-700: #0704fe;
+    --ebony-800: #0707cc;
+    --ebony-900: #10139f;
+    --ebony-950: #03031c;
+}
+
+body{
+    margin: 0;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

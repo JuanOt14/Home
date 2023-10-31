@@ -1,0 +1,307 @@
+.index-root{
+    background-color: var(--ebony-50);
+    color: var(--ebony-950);
+    margin: 0;
+}
+
+/*-------------------------------------------Header---------------------------------------*/
+.index-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.index-header img{
+    height: 2rem;
+}
+
+.index-header-nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.index-header button{
+    background-color: var(--ebony-950);
+    color: var(--ebony-50);
+    border: var(--ebony-50) solid 2px; 
+    border-radius: 0.3rem;
+    height: 2rem;
+    width: 5rem;
+}
+
+.index-header button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--ebony-900);
+}
+
+/*-----------------------First section of the main page-------------------------*/
+.index-main{
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+}
+
+.index-main-info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    max-width: 80vh;
+}
+
+.index-main-info h3{
+    color: var(--ebony-300);
+    opacity: 70%;
+    margin: 0;
+}
+.index-main-info h2{
+    color: var(--ebony-400);
+    opacity: 50%;
+    margin: 0;
+}
+.index-main-info h1{
+    color: var(--ebony-500);
+    margin: 0;
+    font-size: 3rem;
+}
+
+.index-main-info button{
+    border: var(--ebony-100) 2px solid;
+    background-color: var(--ebony-950);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+
+.index-main-info button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--ebony-900);
+}
+
+.index-main-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-main-img img{
+    height: 50vh;
+    border-radius: 50%;
+}
+
+.index-main-img button:hover{
+    background-color: var(--ebony-900);
+    cursor: pointer;
+}
+
+/*-----------------Second section for the personal information-------------------*/
+.index-personal-info{
+    background-color: var(--ebony-100);
+    color: var(--ebony-950);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/*--------------------------------Titles and Lines-----------------------------*/
+.section-title{
+    margin: 6rem 0 1rem 0;
+}
+.line{
+    background-color: var(--ebony-950);
+    margin-bottom: 4rem;
+    opacity: 80%;
+    height: 2px;
+    width: 6rem;
+}
+
+.index-personal-info-container{
+    display: flex;
+    align-items: center;
+    padding: 0 0 2rem 0;
+    gap: 2rem;
+}
+
+.index-personal-info-container p {
+    font-size: 1.5rem;
+}
+
+.index-personal-info-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 0 5rem 0;
+}
+
+.index-personal-info-detail img{
+    height: 40vh;
+}
+
+.index-personal-info-detail-text{
+    width: 50vh;
+}
+
+/*-------------------Third section for the projects---------------------*/
+.index-mywork-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-mywork-services{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.index-mywork-services-card{
+    background-color: var(--ebony-100);
+    padding: 1em 1em 0 1em;
+    width: 18rem;
+}
+
+.index-mywork-services-card img{
+    width: 18rem;
+}
+
+.index-mywork-services-card-text{
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+/*--------------------------------Work Experience-------------------------*/
+.index-work-experience{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.index-work-experience-card{
+    background-color: var(--ebony-100);
+    width: 16rem;
+    padding: 1rem;
+}
+
+/*-------------------------------Progress Bars-------------------------------*/
+.progress-bar-back{
+    width: 100%;
+    height: 1rem;
+    background-color: var(--ebony-200);
+    border-radius: 1rem;
+}
+
+.progress-bar{
+    height: 1rem;
+    background-color: var(--ebony-500);
+    border-radius: 1rem;
+}
+
+#frontend{
+    width: 90%;
+}
+#ui-ux{
+    width: 70%;
+}
+#multimedia{
+    width: 80%;
+}
+
+/*---------------------------------Project Cards--------------------------------*/
+.index-portfolio{
+    display: flex;
+    gap: 1rem;
+}
+
+.index-project-card{
+    display: flex;
+    border-radius: 1rem;
+    height: 18rem;
+    width: 27rem;
+}
+
+.index-project-card:hover{
+    transition: 0.3s;
+    scale: 1.02;
+}
+
+.index-project-card h3{
+    color: var(--ebony-950);
+    margin: 0 0 0.5rem 1rem;
+    align-self: flex-end;
+}
+
+.restaurant{
+    background: local no-repeat top left url(../assets/restaurant/ssRestaurant.png);
+    background-size: 100vh;
+}
+
+/*----------------------------------Foot page-----------------------------------*/
+.index-footpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--ebony-950);
+    color: var(--ebony-50);
+    height: 10rem;
+    margin: 4rem 0 0 0;
+    padding: 0 2rem;
+}
+
+.index-footpage img{
+    height: 5rem;
+}
+
+.index-footpage-social img{
+    height: 3rem;
+    color: var(--ebony-50);
+}
+
+/*-----------------------------------Media Querys-------------------------------*/
+@media screen and (max-width: 480px) {
+    :root{
+        font-size: 20px;
+    }
+    body{
+        width: 100vh;
+    }
+    .index-header{
+        display: none;
+    }
+    .index-main{
+        flex-direction: column;
+        height: 180vh;
+        padding: 1em;
+        gap: 2rem;
+        font-size: 4vh;
+    }
+    .index-personal-info-container{
+        flex-direction: column;
+    }
+    .index-personal-info-detail , .index-mywork-services{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .index-work-experience{
+        flex-direction: column;
+    }
+    .index-portfolio{
+        flex-direction: column;
+    }
+    .index-project-card{
+        flex-direction: column;
+        width: 80vh;
+    }
+    .index-footpage{
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .index-footpage-social{
+        
+    }
+}

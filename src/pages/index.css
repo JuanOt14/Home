@@ -21,6 +21,14 @@
     gap: 2rem;
 }
 
+a label{
+    color: var(--ebony-950);
+}
+a label:hover{
+    color: var(--ebony-800);
+    cursor: pointer;
+}
+
 .index-header button{
     background-color: var(--ebony-950);
     color: var(--ebony-50);
@@ -98,16 +106,6 @@
     cursor: pointer;
 }
 
-/*-----------------Second section for the personal information-------------------*/
-.index-personal-info{
-    background-color: var(--ebony-100);
-    color: var(--ebony-950);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-
 /*--------------------------------Titles and Lines-----------------------------*/
 .section-title{
     margin: 6rem 0 1rem 0;
@@ -118,6 +116,16 @@
     opacity: 80%;
     height: 2px;
     width: 6rem;
+}
+
+/*-----------------Second section for the personal information-------------------*/
+.index-personal-info{
+    background-color: var(--ebony-100);
+    color: var(--ebony-950);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
 }
 
 .index-personal-info-container{
@@ -162,6 +170,7 @@
 
 .index-mywork-services-card{
     background-color: var(--ebony-100);
+    border-radius: 1rem;
     padding: 1em 1em 0 1em;
     width: 18rem;
 }
@@ -184,6 +193,7 @@
 
 .index-work-experience-card{
     background-color: var(--ebony-100);
+    border-radius: 1rem;
     width: 16rem;
     padding: 1rem;
 }
@@ -215,6 +225,7 @@
 /*---------------------------------Project Cards--------------------------------*/
 .index-portfolio{
     display: flex;
+    position: relative;
     gap: 1rem;
 }
 
@@ -239,6 +250,51 @@
 .restaurant{
     background: local no-repeat top left url(../assets/restaurant/ssRestaurant.png);
     background-size: 100vh;
+}
+
+/*-----------------------------------Carousel-----------------------------------*/
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.index-portfolio > .index-project-card{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+.index-project-card:nth-child(2) {
+    animation-delay: 2s;
+}
+.index-project-card:nth-child(3) {
+    animation-delay: 4s;
+}
+.index-project-card:nth-child(4) {
+    animation-delay: 6s;
+}
+.index-project-card:nth-child(5) {
+    animation-delay: 8s;
 }
 
 /*----------------------------------Foot page-----------------------------------*/
@@ -300,8 +356,5 @@
     .index-footpage{
         flex-direction: column;
         padding: 1rem 0;
-    }
-    .index-footpage-social{
-        
     }
 }

@@ -17,14 +17,22 @@ function Index() {
         <section className="index-header">
             <img alt="Logo" src={logoDark} />
             <div className="index-header-nav">
-                <label>Home</label>
-                <label>About</label>
-                <label>Portfolio</label>
-                <label>Contact</label>
+                <a href="#index-main">
+                    <label>Home</label>
+                </a>
+                <a href="#index-personal-info">
+                    <label>About me</label>
+                </a>
+                <a href="#index-mywork-section">
+                    <label>Services</label>
+                </a>
+                <a href="#index-portfolio">
+                    <label>Portfolio</label>
+                </a>
             </div>
             <button><strong>Hire Me</strong></button>
         </section>
-        <section className="index-main">
+        <section className="index-main" id="index-main">
             <div className="index-main-info">
                 <h3>Hi my name is</h3>
                 <h1>Juan Fernando Otero Garcia</h1>
@@ -36,13 +44,13 @@ function Index() {
                     websites that are also visually stunning and perfectly responsive.
                     Let’s collaborate to bring your digital vision to life!
                 </p>
-                <button>Contact Me</button>
+                <button>Get My CV</button>
             </div>
             <div className="index-main-img">
                 <img alt="Main Image" src={profilePic} />
             </div>
         </section>
-        <section className="index-personal-info">
+        <section className="index-personal-info" id="index-personal-info">
             <h2 className="section-title">About Me</h2>
             <div className="line"></div>
             <div className="index-personal-info-detail">
@@ -62,7 +70,7 @@ function Index() {
                 </div>
             </div>
         </section>
-        <section className="index-mywork-section">
+        <section className="index-mywork-section" id="index-mywork-section">
             <h2 className="section-title">What Sevices I’m providing</h2>
             <div className="line"></div>
             <div className="index-mywork-services">
@@ -132,7 +140,7 @@ function Index() {
                     <div className="progress-bar-back"><div className="progress-bar" id="multimedia"></div></div>
                 </div>
             </div>
-            <h2 className="section-title">My Portfolio</h2>
+            <h2 className="section-title" id="index-portfolio">My Portfolio</h2>
             <div className="line"></div>
             <div className="index-portfolio">
                 <a href="/restaurant">

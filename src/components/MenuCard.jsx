@@ -36,7 +36,7 @@ function MenuCard ({name, description, price }) {
             <img src={imagen} alt="card image" id="card-img"/>
             <h2 className="card-title">{name}</h2>
             <p className="card-text">{description}</p>
-            <p className="card-text">{price}</p>
+            <p className="card-text"><strong>${price}</strong></p>
             {
             <div className='btn-section'>
                 <button className={btnClassName} id='btn-add-cart' onClick={addItem}>Agregar</button>

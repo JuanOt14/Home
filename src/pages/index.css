@@ -343,10 +343,7 @@ a label:hover{
         flex-direction: column;
         gap: 2rem;
     }
-    .index-work-experience{
-        flex-direction: column;
-    }
-    .index-portfolio{
+    .index-work-experience, .index-portfolio{
         flex-direction: column;
     }
     .index-project-card{

@@ -1,37 +1,62 @@
 {
-    "maduro":{
-        "id":"Maduro",
-        "description": "lorem ipsum",
-        "price": "$15.000"
+    "Caprese Salad":{
+        "name": "Caprese Salad",
+        "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+        "price": 9.99
     },
-    "sancocho":{
-        "id":"Sancocho",
-        "description": "lorem ipsum",
-        "price": "$20.000"
+    "Garlic Parmesan Wings":{
+        "name": "Garlic Parmesan Wings",
+        "description": "Crispy chicken wings tossed in garlic parmesan sauce.",
+        "price": 11.99
     },
-    "chorizo":{
-        "id":"Chorizo",
-        "description": "lorem ipsum",
-        "price": "$12.000"
+    "Spinach Artichoke Dip":{
+        "name": "Spinach Artichoke Dip",
+        "description": "Creamy spinach and artichokes served with tortilla chips.",
+        "price": 8.99
     },
-    "bandeja paisa":{
-        "id":"Bandeja Paisa",
-        "description": "lorem ipsum",
-        "price": "$25.000"
+    "Grilled Salmon":{
+        "name": "Grilled Salmon",
+        "description": "Grilled Atlantic salmon served with seasoned vegetables and wild rice.",
+        "price": 18.99
     },
-    "arroz con pollo":{
-        "id":"Arroz con Pollo",
-        "description": "lorem ipsum",
-        "price": "$18.000"
+    "Steak Frites":{
+        "name": "Steak Frites",
+        "description": "Grilled sirloin steak with herb butter and a side of crispy french fries.",
+        "price": 22.99
     },
-    "arroz chino":{
-        "id":"Arroz Chino",
-        "description":"lorem ipsum",
-        "price":"$19.000"
+    "Vegetable Stir-Fry":{
+        "name": "Vegetable Stir-Fry",
+        "description": "Mixed vegetables stir-fried with tofu in a savory sauce, served with steamed jasmine rice.",
+        "price": 15.99
     },
-    "bondiola":{
-        "id":"Bondiola",
-        "description":"lorem ipsum",
-        "price":"$14.000"
+    "Spaghetti Bolognese":{
+        "name": "Spaghetti Bolognese",
+        "description": "Spaghetti pasta served with homemade beef Bolognese sauce.",
+        "price": 14.99
+    },
+    "Chicken Alfredo":{
+        "name": "Chicken Alfredo",
+        "description": "Fettuccine pasta with grilled chicken and creamy Alfredo sauce.",
+        "price": 16.99
+    },
+    "Pesto Tortellini":{
+        "name": "Pesto Tortellini",
+        "description": "Cheese-filled tortellini with basil pesto and cherry tomatoes.",
+        "price": 13.99
+    },
+    "New York Cheesecake":{
+        "name": "New York Cheesecake",
+        "description": "Classic rich and creamy cheesecake served with berry compote.",
+        "price": 7.99
+    },
+    "Chocolate Lava Cake":{
+        "name": "Chocolate Lava Cake",
+        "description": "Warm chocolate cake with a molten chocolate center, served with vanilla ice cream.",
+        "price": 8.99
+    },
+    "Fruit Tart":{
+        "name": "Fruit Tart",
+        "description": "Shortcrust pastry filled with pastry cream and topped with fresh seasonal fruits.",
+        "price": 6.99
     }
 }

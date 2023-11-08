@@ -6,8 +6,10 @@
     border-radius: 2.2rem;
     border: var(--dark-green) solid 3px;
     text-align: left;
-    flex-grow: 1;
-    flex-basis: 200;
+    position: relative;
+    flex: 0 0 309px;
+    height: 22rem;
+    overflow: hidden;
 }
 
 .content-card:hover{
@@ -16,8 +18,7 @@
 }
 
 #card-img{
-    display: none;
-    border-radius: 2rem 2rem 0 0;
+    width: 100%;
     margin-bottom: 1rem;
 }
 

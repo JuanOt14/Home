@@ -6,7 +6,7 @@
 
 .restaurant-home{
     background:url(../assets/restaurant/lily-banse--YHSwy6uqvk-unsplash.jpg) local no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: row-reverse;
     align-items: top;
@@ -21,7 +21,7 @@
     color: var(--white);
     height: 95vh;
     width: 20rem;
-    padding: 2rem 3rem 2rem 50rem;
+    padding: 2rem 3rem 2rem 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,8 +34,8 @@
 
 .restaurant-content{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
     gap: 1rem;
     padding: 0 1rem 1rem 1rem;
 }
@@ -44,4 +44,23 @@
     background-color: var(--dark-green);
     color: var(--white);
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .restaurant-home{
+        background-size: cover;
+        height: 150vh;
+    }
+    .restaurant-home-description{
+        background-color: rgba(0, 71, 62, 0.6);
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+    .restaurant-contact{
+        flex-direction: column;
+        align-items: center;
+    }
 }

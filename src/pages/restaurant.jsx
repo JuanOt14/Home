@@ -32,13 +32,32 @@ function Restaurant () {
                         const id = item.toString();
                         
                         return(
-                            <MenuCard key={id} name={data[id].id} description={data[id].description} price={data[id].price}/>
+                            <MenuCard key={id} name={data[id].name} description={data[id].description} price={data[id].price}/>
                         )
                     })
                 }
             </section>
             <section className='restaurant-contact'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non delectus ab voluptas assumenda alias, vero laboriosam! Quod ab, consequatur, possimus impedit error voluptatum corrupti, repellat ratione illo officia id.</p>
+                <p>
+                    Contact Us: <br/>
+                    Address: 123 Main Street, City, State, ZIP <br/>
+                    Phone: +1-XXX-XXX-XXXX <br/>
+                    Email: info@restaurantname.com <br/>
+                </p>
+                <p>
+                    Opening Hours: <br/>
+                    Monday to Thursday: 11:00 AM - 10:00 PM <br/>
+                    Friday and Saturday: 11:00 AM - 11:00 PM <br/>
+                    Sunday: 12:00 PM - 9:00 PM <br/>
+                </p>
+                <div>
+                    <p>
+                    Follow Us: <br/>
+                    Facebook <br/>
+                    Instagram <br/>
+                    Twitter <br/>
+                    </p>
+                </div>
             </section>
         </div>
     );

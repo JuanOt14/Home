@@ -1,4 +1,5 @@
 import './restaurant.css';
+import Menu from '../components/Menu';
 
 import MenuCard from '../components/MenuCard';
 import Title from '../components/Title';
@@ -12,6 +13,7 @@ function Restaurant () {
     
     return(
         <div className='restaurant-root'>
+            <Menu/>
             <Title/>
             <section className='restaurant-home'>
                 <div className='restaurant-home-description'>

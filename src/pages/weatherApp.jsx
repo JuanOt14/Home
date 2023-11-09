@@ -1,10 +1,12 @@
 import './weatherApp.css'
+import Menu from '../components/Menu';
 import weatherInfo from '../data/weatherInfo.json'
 //const apiKey = "eaba105804b148b3a6b144848230711" ;
 
 function WeatherApp () {
     return(
         <div className='weatherApp-root'>
+            <Menu/>
             <h1>Weather App</h1>
             <div className='weather-card'>
                 <h3>{weatherInfo.location.region}</h3>

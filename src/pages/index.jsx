@@ -1,4 +1,5 @@
 import "./index.css";
+import Menu from "../components/Menu";
 
 import logoLight from '../assets/Otech-logo-lg.svg'
 import logoDark from '../assets/Otech-logo-dr.svg'
@@ -14,6 +15,7 @@ import github from '../assets/icons8-github-48.png'
 function Index() {
     return (
     <div className="index-root">
+        <Menu/>
         <section className="index-header">
             <img alt="Logo" src={logoDark} />
             <div className="index-header-nav">

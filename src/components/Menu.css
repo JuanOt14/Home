@@ -1,0 +1,61 @@
+.menuButton{
+    position: relative;
+    opacity: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: #fff solid 2px;
+    border-radius: 30%;
+    left: 25vh;
+    transition: 0.3s;
+}
+
+.menuButton-active{
+    width: 2rem;
+    height: 2rem;
+    border: #fff solid 2px;
+    border-radius: 30%;
+    align-self: flex-end;
+    margin-right: 1rem;
+}
+
+.menu{
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    width: 40vh;
+    z-index: 1;
+    top: 0;
+    left: -40vh;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.active{
+    left: 0;
+    transition: 0.3s;
+}
+
+.menuItem{
+    color: #fff;
+    display: block;
+    width: 40vh;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuItem:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+}
+
+.menu img{
+    position: absolute;
+    width: 35vh;
+    bottom: 3rem;
+}

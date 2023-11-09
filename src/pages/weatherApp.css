@@ -2,6 +2,9 @@
     background-color: var(--ebony-950);
     padding: 1rem;
 }
+.weatherApp-root h1{
+    margin-left: 4rem;
+}
 
 .weather-card{
     border: var(--ebony-50) 2px solid;

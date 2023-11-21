@@ -9,9 +9,9 @@ function Title () {
                 <img src={logo} alt='logo' width='50rem'/>
             </div>
             <div className='menu-nav'>
-                <label><a href='/'>Home</a></label>
-                <label><a href='/'>Menu</a></label>
-                <label><a href='/'>Contact</a></label>
+                <label><a href='#restaurant-home'>Home</a></label>
+                <label><a href='#restaurant-section'>Menu</a></label>
+                <label><a href='#restaurant-contact'>Contact</a></label>
             </div>
         </section>
     )

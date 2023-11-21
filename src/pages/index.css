@@ -44,6 +44,104 @@ a label:hover{
     background-color: var(--ebony-900);
 }
 
+/*-------------------------------Contac Me display----------------------------*/
+.index-contactme{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disable{
+    display: none;
+}
+
+.index-contactme-win{
+    position: absolute;
+    background-color: var(--ebony-100);
+    border-radius: 1rem;
+    width: 80vh;
+    height: 35vh;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-contactme-close{
+    align-self: flex-end;
+    border: none;
+    background: none;
+    opacity: 40%;
+}
+.btn-contactme-close:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+.index-contactme-win form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input{
+    all: unset;
+    padding: 1rem;
+    border: 1px solid var(--ebony-900);
+    border-radius: 10px;
+    transition: 150ms
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    pointer-events: none;
+    transition: 150ms
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#message{
+    width: 80%;
+}
+
+.input:focus{
+    border: 1px solid var(--ebony-950);
+}
+.input:is(:focus, :valid) ~ label{
+    transform: translateY(-130%) scale(0.7);
+    padding-inline: 0.3rem;
+    background-color: var(--ebony-100);
+}
+
+.btn-send{
+    justify-self: flex-end;
+    border: var(--ebony-100) 2px solid;
+    background-color: var(--ebony-950);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+.btn-send:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--ebony-900);
+}
+
 /*-----------------------First section of the main page-------------------------*/
 .index-main{
     display: flex;
@@ -198,28 +296,24 @@ a label:hover{
     padding: 1rem;
 }
 
-/*-------------------------------Progress Bars-------------------------------*/
-.progress-bar-back{
-    width: 100%;
-    height: 1rem;
-    background-color: var(--ebony-200);
-    border-radius: 1rem;
+/*----------------------------------Tecnologies----------------------------------*/
+.index-tecnologies{
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.progress-bar{
-    height: 1rem;
-    background-color: var(--ebony-500);
-    border-radius: 1rem;
+.index-logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#frontend{
-    width: 90%;
-}
-#ui-ux{
-    width: 70%;
-}
-#multimedia{
-    width: 80%;
+.index-logo-container img{
+    height: 6rem;
 }
 
 /*---------------------------------Project Cards--------------------------------*/
@@ -324,12 +418,13 @@ a label:hover{
         font-size: 20px;
     }
     body{
-        width: 100vh;
+        width: 90vh;
     }
     .index-header{
         display: none;
     }
     .index-main{
+        max-width: 80vh;
         flex-direction: column;
         height: 180vh;
         padding: 1em;
@@ -346,6 +441,9 @@ a label:hover{
     .index-work-experience, .index-portfolio{
         flex-direction: column;
     }
+    .index-tecnologies{
+        max-width: 13rem;
+    }
     .index-project-card{
         flex-direction: column;
         width: 80vh;
@@ -353,5 +451,8 @@ a label:hover{
     .index-footpage{
         flex-direction: column;
         padding: 1rem 0;
+    }
+    .index-footpage>img{
+        width: 20rem;
     }
 }

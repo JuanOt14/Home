@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Logo from '../assets/Otech-logo-lg.svg';
 
 function Menu () {
-    const [isActive, setActive] = useState(true);
+    const [isActive, setActive] = useState(false);
     var btnClassName = isActive ? 'menuButton-active' : 'menuButton';
     var menuClassName = isActive ? 'menu active' : 'menu';
     var btnContent = isActive ? '<' : '>';
@@ -25,7 +25,7 @@ function Menu () {
             <a href="/weatherapp">
                 <div className='menuItem'>Weather App</div>
             </a>
-            <img alt='Logo Image' src={Logo}/>
+            <img alt='Logo Image' src={Logo }/>
         </div>
     );
 }

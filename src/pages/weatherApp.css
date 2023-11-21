@@ -2,7 +2,7 @@
     background-color: var(--ebony-950);
     padding: 1rem;
 }
-.weatherApp-root h1{
+#title-weatherApp{
     margin-left: 4rem;
 }
 

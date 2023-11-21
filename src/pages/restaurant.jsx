@@ -15,7 +15,7 @@ function Restaurant () {
         <div className='restaurant-root'>
             <Menu/>
             <Title/>
-            <section className='restaurant-home'>
+            <section className='restaurant-home' id='restaurant-home'>
                 <div className='restaurant-home-description'>
                     <h1>Enjoy our Food!</h1>
                     <p> Welcome to Happy Meal - Where Every Meal is a Celebration! 
@@ -39,7 +39,7 @@ function Restaurant () {
                     })
                 }
             </section>
-            <section className='restaurant-contact'>
+            <section className='restaurant-contact' id='restaurant-contact'>
                 <p>
                     Contact Us: <br/>
                     Address: 123 Main Street, City, State, ZIP <br/>

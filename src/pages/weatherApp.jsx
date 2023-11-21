@@ -7,7 +7,7 @@ function WeatherApp () {
     return(
         <div className='weatherApp-root'>
             <Menu/>
-            <h1>Weather App</h1>
+            <h1 id='title-weatherApp'>Weather App</h1>
             <div className='weather-card'>
                 <h3>{weatherInfo.location.region}</h3>
                 <div className='weather-location-info'>

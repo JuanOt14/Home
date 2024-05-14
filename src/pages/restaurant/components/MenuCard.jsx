@@ -1,5 +1,5 @@
 import './MenuCard.css';
-import imagen from '../assets/default.jpg';
+//import imagen from '../assets/default.jpg';
 import PropTypes  from 'prop-types';
 import { useState } from 'react';
 
@@ -33,7 +33,7 @@ function MenuCard ({name, description, price }) {
 
     return(
         <div className="content-card">
-            <img src={imagen} alt="card image" id="card-img"/>
+            <img src='' alt="card image" id="card-img"/>
             <h2 className="card-title">{name}</h2>
             <p className="card-text">{description}</p>
             <p className="card-text"><b>${price}</b></p>

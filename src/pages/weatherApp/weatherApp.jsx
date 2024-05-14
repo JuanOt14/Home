@@ -1,6 +1,6 @@
 import './weatherApp.css'
-import Menu from '../components/Menu';
-import weatherInfo from '../data/weatherInfo.json'
+import Menu from '../../globalComponents/Menu';
+//import weatherInfo from '../../data/weatherInfo.json'
 //const apiKey = "eaba105804b148b3a6b144848230711" ;
 
 function WeatherApp () {

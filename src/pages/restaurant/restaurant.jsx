@@ -1,9 +1,14 @@
 import "./restaurant.css";
-import Menu from "../components/Menu";
 
-import MenuCard from "../components/MenuCard";
-import Title from "../components/Title";
-import data from "../data/menu.json";
+//import global Components
+import Menu from '../../globalComponents/Menu';
+
+//import local Components
+import MenuCard from './components/MenuCard';
+import Title from './components/Title';
+
+//import data
+import data from "./data/menu.json";
 
 function Restaurant() {
   var menuItems = [];

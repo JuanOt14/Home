@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root{
     font-family: "Press Start 2P&dispaly", serif;
+    
     --white: #f2f7f5;
     --dark-green: #00473e;
     --light-back: #475d5b;
@@ -18,6 +19,18 @@
     --ebony-800: #0707cc;
     --ebony-900: #10139f;
     --ebony-950: #03031c;
+
+    --nile-blue-50 : #f4f7fb;
+    --nile-blue-100: #e9edf5;
+    --nile-blue-200: #cedae9;
+    --nile-blue-300: #a3bbd6;
+    --nile-blue-400: #7196bf;
+    --nile-blue-500: #4f79a8;
+    --nile-blue-600: #3c608d;
+    --nile-blue-700: #324d72;
+    --nile-blue-800: #2c4360;
+    --nile-blue-900: #27374d;
+    --nile-blue-950: #1b2536;
 }
 
 body{

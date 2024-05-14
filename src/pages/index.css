@@ -1,51 +1,52 @@
-.index-root{
-    background-color: var(--ebony-50);
+.index-root {
+    background-color: #fff;
     color: var(--ebony-950);
     margin: 0;
 }
 
 /*-------------------------------------------Header---------------------------------------*/
-.index-header{
+.index-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1rem 1rem 4rem;
 }
 
-.index-header img{
+.index-header img {
     height: 2rem;
 }
 
-.index-header-nav{
+.index-header-nav {
     display: flex;
     gap: 2rem;
 }
 
-a label{
+a label {
     color: var(--ebony-950);
 }
-a label:hover{
+
+a label:hover {
     color: var(--ebony-800);
     cursor: pointer;
 }
 
-.index-header button{
+.index-header button {
     background-color: var(--ebony-950);
     color: var(--ebony-50);
-    border: var(--ebony-50) solid 2px; 
+    border: var(--ebony-50) solid 2px;
     border-radius: 0.3rem;
     height: 2rem;
     width: 5rem;
 }
 
-.index-header button:hover{
+.index-header button:hover {
     cursor: pointer;
     transition: 0.3s;
     background-color: var(--ebony-900);
 }
 
 /*-------------------------------Contac Me display----------------------------*/
-.index-contactme{
+.index-contactme {
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -56,11 +57,11 @@ a label:hover{
     align-items: center;
 }
 
-.disable{
+.disable {
     display: none;
 }
 
-.index-contactme-win{
+.index-contactme-win {
     position: absolute;
     background-color: var(--ebony-100);
     border-radius: 1rem;
@@ -72,19 +73,20 @@ a label:hover{
     align-items: center;
 }
 
-.btn-contactme-close{
+.btn-contactme-close {
     align-self: flex-end;
     border: none;
     background: none;
     opacity: 40%;
 }
-.btn-contactme-close:hover{
+
+.btn-contactme-close:hover {
     cursor: pointer;
     opacity: 80%;
     transition: 0.3s;
 }
 
-.index-contactme-win form{
+.index-contactme-win form {
     width: 100%;
     height: 100%;
     display: flex;
@@ -93,42 +95,41 @@ a label:hover{
     gap: 1rem;
 }
 
-.input-group{
+.input-group {
     position: relative;
 }
 
-.input{
+.input {
     all: unset;
     padding: 1rem;
     border: 1px solid var(--ebony-900);
     border-radius: 10px;
-    transition: 150ms
-        cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label{
+.label {
     position: absolute;
     top: 1rem;
     left: 1rem;
     pointer-events: none;
-    transition: 150ms
-        cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#message{
+#message {
     width: 80%;
 }
 
-.input:focus{
+.input:focus {
     border: 1px solid var(--ebony-950);
 }
-.input:is(:focus, :valid) ~ label{
+
+.input:is(:focus, :valid)~label {
     transform: translateY(-130%) scale(0.7);
     padding-inline: 0.3rem;
     background-color: var(--ebony-100);
 }
 
-.btn-send{
+.btn-send {
     justify-self: flex-end;
     border: var(--ebony-100) 2px solid;
     background-color: var(--ebony-950);
@@ -136,20 +137,21 @@ a label:hover{
     height: 2rem;
     border-radius: 0.3rem;
 }
-.btn-send:hover{
+
+.btn-send:hover {
     cursor: pointer;
     transition: 0.3s;
     background-color: var(--ebony-900);
 }
 
 /*-----------------------First section of the main page-------------------------*/
-.index-main{
+.index-main {
     display: flex;
     justify-content: center;
     height: 95vh;
 }
 
-.index-main-info{
+.index-main-info {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -157,23 +159,25 @@ a label:hover{
     max-width: 80vh;
 }
 
-.index-main-info h3{
+.index-main-info h3 {
     color: var(--ebony-300);
     opacity: 70%;
     margin: 0;
 }
-.index-main-info h2{
+
+.index-main-info h2 {
     color: var(--ebony-400);
     opacity: 50%;
     margin: 0;
 }
-.index-main-info h1{
+
+.index-main-info h1 {
     color: var(--ebony-500);
     margin: 0;
     font-size: 3rem;
 }
 
-.index-main-info button{
+.index-main-info button {
     border: var(--ebony-100) 2px solid;
     background-color: var(--ebony-950);
     width: 10rem;
@@ -181,34 +185,35 @@ a label:hover{
     border-radius: 0.3rem;
 }
 
-.index-main-info button:hover{
+.index-main-info button:hover {
     cursor: pointer;
     transition: 0.3s;
     background-color: var(--ebony-900);
 }
 
-.index-main-img{
+.index-main-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.index-main-img img{
+.index-main-img img {
     height: 50vh;
     border-radius: 50%;
 }
 
-.index-main-img button:hover{
+.index-main-img button:hover {
     background-color: var(--ebony-900);
     cursor: pointer;
 }
 
 /*--------------------------------Titles and Lines-----------------------------*/
-.section-title{
+.section-title {
     margin: 6rem 0 1rem 0;
 }
-.line{
+
+.line {
     background-color: var(--ebony-950);
     margin-bottom: 4rem;
     opacity: 80%;
@@ -217,7 +222,7 @@ a label:hover{
 }
 
 /*-----------------Second section for the personal information-------------------*/
-.index-personal-info{
+.index-personal-info {
     background-color: var(--ebony-100);
     color: var(--ebony-950);
     display: flex;
@@ -226,7 +231,7 @@ a label:hover{
     padding: 1rem;
 }
 
-.index-personal-info-container{
+.index-personal-info-container {
     display: flex;
     align-items: center;
     padding: 0 0 2rem 0;
@@ -237,7 +242,7 @@ a label:hover{
     font-size: 1.5rem;
 }
 
-.index-personal-info-detail{
+.index-personal-info-detail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,51 +250,51 @@ a label:hover{
     padding: 5rem 0 5rem 0;
 }
 
-.index-personal-info-detail img{
+.index-personal-info-detail img {
     height: 40vh;
 }
 
-.index-personal-info-detail-text{
+.index-personal-info-detail-text {
     width: 50vh;
 }
 
 /*-------------------Third section for the projects---------------------*/
-.index-mywork-section{
+.index-mywork-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.index-mywork-services{
+.index-mywork-services {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
 }
 
-.index-mywork-services-card{
+.index-mywork-services-card {
     background-color: var(--ebony-100);
     border-radius: 1rem;
     padding: 1em 1em 0 1em;
     width: 18rem;
 }
 
-.index-mywork-services-card img{
+.index-mywork-services-card img {
     width: 18rem;
 }
 
-.index-mywork-services-card-text{
+.index-mywork-services-card-text {
     padding: 0.5rem;
     overflow: hidden;
 }
 
 /*--------------------------------Work Experience-------------------------*/
-.index-work-experience{
+.index-work-experience {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
-.index-work-experience-card{
+.index-work-experience-card {
     background-color: var(--ebony-100);
     border-radius: 1rem;
     width: 16rem;
@@ -297,7 +302,7 @@ a label:hover{
 }
 
 /*----------------------------------Tecnologies----------------------------------*/
-.index-tecnologies{
+.index-tecnologies {
     max-width: 60rem;
     display: flex;
     justify-content: center;
@@ -305,43 +310,43 @@ a label:hover{
     gap: 1rem;
 }
 
-.index-logo-container{
+.index-logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.index-logo-container img{
+.index-logo-container img {
     height: 6rem;
 }
 
 /*---------------------------------Project Cards--------------------------------*/
-.index-portfolio{
+.index-portfolio {
     display: flex;
     position: relative;
     gap: 1rem;
 }
 
-.index-project-card{
+.index-project-card {
     display: flex;
     border-radius: 1rem;
     height: 18rem;
     width: 27rem;
 }
 
-.index-project-card:hover{
+.index-project-card:hover {
     transition: 0.3s;
     scale: 1.02;
 }
 
-.index-project-card h3{
+.index-project-card h3 {
     color: var(--ebony-950);
     margin: 0 0 0.5rem 1rem;
     align-self: flex-end;
 }
 
-.restaurant{
+.restaurant {
     background: local no-repeat top left url(../assets/restaurant/ssRestaurant.png);
     background-size: 100vh;
 }
@@ -352,25 +357,29 @@ a label:hover{
         transform: translateX(200px);
         opacity: 0;
     }
+
     10% {
         transform: translateX(0);
         opacity: 1;
     }
+
     20% {
         transform: translateX(0);
         opacity: 1;
     }
+
     30% {
         transform: translateX(-200px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(-200px);
         opacity: 0;
     }
 }
 
-.index-portfolio > .index-project-card{
+.index-portfolio>.index-project-card {
     position: absolute;
     top: 0;
     left: calc(50% - 100px);
@@ -381,18 +390,21 @@ a label:hover{
 .index-project-card:nth-child(2) {
     animation-delay: 2s;
 }
+
 .index-project-card:nth-child(3) {
     animation-delay: 4s;
 }
+
 .index-project-card:nth-child(4) {
     animation-delay: 6s;
 }
+
 .index-project-card:nth-child(5) {
     animation-delay: 8s;
 }
 
 /*----------------------------------Foot page-----------------------------------*/
-.index-footpage{
+.index-footpage {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -403,27 +415,30 @@ a label:hover{
     padding: 0 2rem;
 }
 
-.index-footpage img{
+.index-footpage img {
     height: 5rem;
 }
 
-.index-footpage-social img{
+.index-footpage-social img {
     height: 3rem;
     color: var(--ebony-50);
 }
 
 /*-----------------------------------Media Querys-------------------------------*/
 @media screen and (max-width: 480px) {
-    :root{
+    :root {
         font-size: 20px;
     }
-    body{
+
+    body {
         width: 90vh;
     }
-    .index-header{
+
+    .index-header {
         display: none;
     }
-    .index-main{
+
+    .index-main {
         max-width: 80vh;
         flex-direction: column;
         height: 180vh;
@@ -431,28 +446,53 @@ a label:hover{
         gap: 2rem;
         font-size: 4vh;
     }
-    .index-personal-info-container{
+
+    .index-personal-info-container {
         flex-direction: column;
     }
-    .index-personal-info-detail , .index-mywork-services{
+
+    .index-personal-info-detail,
+    .index-mywork-services {
         flex-direction: column;
         gap: 2rem;
     }
-    .index-work-experience, .index-portfolio{
+
+    .index-work-experience,
+    .index-portfolio {
         flex-direction: column;
     }
-    .index-tecnologies{
+
+    .index-tecnologies {
         max-width: 13rem;
     }
-    .index-project-card{
+
+    .index-project-card {
         flex-direction: column;
         width: 80vh;
     }
-    .index-footpage{
+
+    .index-footpage {
         flex-direction: column;
         padding: 1rem 0;
     }
-    .index-footpage>img{
+
+    .index-footpage>img {
         width: 20rem;
     }
+}
+
+/*------------------------------------------------Pruebas-------------------------------------------------*/
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    opacity: 0;
+    /* Inicialmente la caja es invisible */
+    transition: opacity 1s ease;
+    /* Transición para la animación */
+}
+
+.container.show .box {
+    opacity: 1;
+    /* Cuando se aplica esta clase al contenedor, la caja se hace visible */
 }

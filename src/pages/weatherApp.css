@@ -2,8 +2,40 @@
     background-color: var(--ebony-950);
     padding: 1rem;
 }
-#title-weatherApp{
-    margin-left: 4rem;
+
+.weatherApp-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar input{
+    background-color: var(--white);
+    border-radius: 2rem;
+    border: none;
+    color: var(--ebony-950);
+    height: 3rem;
+    padding-left: 1rem;
+}
+/*.search-bar input{
+    border: 2px solid var(--ebony-800);
+}*/
+.search-bar button{
+    background-color: var(--white);
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+.search-bar button:hover{
+    background-color: var(--ebony-200);
+    cursor: pointer;
+}
+
+.weatherApp-cards-container{
+    display: flex;
+    justify-content: center;
 }
 
 .weather-card{
@@ -16,12 +48,19 @@
     justify-content: center;
     align-items: center;
 }
-.weather-card h3, .weather-card h4{
-    margin: 0;
+.weather-card h3{
+    margin: 0 0 1rem 0;
+}
+.weather-card p{
+    display: inline;
+}
+.weather-location-weather p~p{
+    margin-left: 1rem;
 }
 
-.weather-location-info{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.weather-location-info h4{
+    display: inline;
+}
+.weather-location-weather h4{
+    margin: 1rem 0 0.5rem 0;
 }

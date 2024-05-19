@@ -14,16 +14,10 @@ import webDraw from './assets/undraw_online_stats_0g94.svg'
 import webDevelop from './assets/undraw_building_websites_i78t.svg'
 import webDevice from './assets/undraw_web_devices_re_m8sc.svg'
 import webBuilder from './assets/undraw_website_builder_re_ii6e.svg'
-import {XSmall, HtmlFill, CssFill, JavascriptFill, VueFill, ReactFill, NodeFill, TypescriptFill, BootstrapFill, GithubFill, LinkedinFill, InstagramFill} from 'akar-icons';
+import { HtmlFill, CssFill, JavascriptFill, VueFill, ReactFill, NodeFill, TypescriptFill, BootstrapFill, GithubFill, LinkedinFill, InstagramFill} from 'akar-icons';
 
 
 function Index() {
-    const [contactIsActive, setContactClassName] = useState(false);
-    var contactClassName = contactIsActive ? '' : 'disable';
-
-    const changeContactClassName = () => {
-        setContactClassName(!contactIsActive);
-    }
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -57,22 +51,6 @@ function Index() {
 
     return (
         <div className="index-root">
-            <div className={`index-contactme ${contactClassName}`} onClick={changeContactClassName}>
-            </div>
-            <div className={`index-contactme-win ${contactClassName}`}>
-                <button onClick={changeContactClassName} className='btn-contactme-close'><XSmall strokeWidth={2} size={36} /></button>
-                <form >
-                    <div className="input-group">
-                        <input className='input' required type="text" id='subject'></input>
-                        <label className='label' htmlFor="Subject">Subject</label>
-                    </div>
-                    <div className="input-group">
-                        <input className='input' required type="text" id='message'></input>
-                        <label className='label' htmlFor="Message">Message</label>
-                    </div>
-                    <button className="btn-send">Send</button>
-                </form>
-            </div>
             <Menu />
             <section className="index-header">
                 <img alt="Logo" src={logoDark} />
@@ -90,7 +68,7 @@ function Index() {
                         <label>Portfolio</label>
                     </a>
                 </div>
-                <button onClick={changeContactClassName}><strong>Hire Me</strong></button>
+                <button><strong>Contact Me</strong></button>
             </section>
             <section className="index-main" id="index-main">
                 <div className="index-main-info">
@@ -106,7 +84,7 @@ function Index() {
                     </p>
                     <button>Get My CV</button>
                 </div>
-                <div className="index-main-img">
+                <div className="index-main-img slide-fwd-center">
                     <img alt="Main Image" src={profilePic} />
                 </div>
             </section>
@@ -240,25 +218,18 @@ function Index() {
                 <h2 className="section-title" id="index-portfolio">My Portfolio</h2>
                 <div className="line"></div>
                 <div className="index-portfolio">
-                    <a href="/restaurant">
+                    <a href="/restaurant/restaurant">
                         <div className="index-project-card restaurant">
                             <h3>
                                 Restaurant Website
                             </h3>
                         </div>
                     </a>
-                    <a href="/weatherapp">
+                    <a href="/weatherapp/weatherapp">
                         <div className="index-project-card">
                             weatherapp
                         </div>
                     </a>
-                </div>
-            </section>
-            <section>
-                <h2>Pruebas</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa hic consequuntur recusandae repudiandae neque ducimus culpa magnam, reprehenderit totam praesentium facere quis quam iure reiciendis perspiciatis porro sint fugiat soluta!</p>
-                <div className={`container ${isVisible ? 'show' : ''}`}>
-                    <div className="box">Animated Box</div>
                 </div>
             </section>
             <section className="index-footpage">

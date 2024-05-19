@@ -19,10 +19,10 @@ function Menu () {
             <a href="/">
                 <div className='menuItem'>Resume</div>
             </a>
-            <a href="/restaurant">
+            <a href="/restaurant/restaurant">
                 <div className='menuItem'>Restaurant</div>
             </a>
-            <a href="/weatherapp">
+            <a href="/weatherapp/weatherapp">
                 <div className='menuItem'>Weather App</div>
             </a>
             <img alt='Logo Image' src={Logo }/>

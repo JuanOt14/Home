@@ -2,6 +2,11 @@
     background: linear-gradient(to bottom left, #27374Dff 0%, #526D82ff 100%);
     color: var(--nile-blue-50);
     margin: 0;
+    background-color: #e5e5f7;
+    background-color: #e9edf5;
+    /*
+    background: linear-gradient(135deg, #1b253655 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #1b2536 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #1b253655 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #1b2536 25%, #e9edf5 25%) 0px 0/ 20px 20px;
+    */
 }
 
 /*-------------------------------------------Header---------------------------------------*/
@@ -34,121 +39,46 @@ a label:hover {
 }
 
 .index-header button {
-    background-color: var(--nile-blue-500);
-    color: var(--nile-blue-50);
-    border: var(--nile-blue-50) solid 2px;
-    border-radius: 0.3rem;
-    height: 2rem;
-    width: 5rem;
+    height: 50px;
+    margin: 5px;
+    width: 120px;
+    background: var(--nile-blue-950);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
 }
 
 .index-header button:hover {
     cursor: pointer;
-    transition: 0.3s;
-    background-color: var(--nile-blue-950);
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
 }
 
-/*-------------------------------Contac Me display----------------------------*/
-.index-contactme {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(31, 31, 31, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.disable {
-    display: none !important;
-}
-
-.index-contactme-win {
-    z-index: 1;
-    position: absolute;
-    top: 35%;
-    left: 30%;
-    background-color: var(--nile-blue-50);
-    color: var(--nile-blue-950);
-    border-radius: 1rem;
-    width: 80vh;
-    height: 35vh;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.btn-contactme-close {
-    align-self: flex-end;
-    border: none;
-    background: none;
-    opacity: 40%;
-    color: var(--nile-blue-950);
-}
-
-.btn-contactme-close:hover {
-    cursor: pointer;
-    opacity: 80%;
-    transition: 0.3s;
-}
-
-.index-contactme-win form {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
-}
-
-.input-group {
-    position: relative;
-}
-
-.input {
-    all: unset;
-    padding: 1rem;
-    border: 1px solid var(--nile-blue-900);
-    border-radius: 10px;
-    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.label {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    pointer-events: none;
-    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-#message {
-    width: 80%;
-}
-
-.input:focus {
-    border: 1px solid var(--nile-blue-950);
-}
-
-.input:is(:focus, :valid)~label {
-    transform: translateY(-130%) scale(0.7);
-    padding-inline: 0.3rem;
-    background-color: var(--nile-blue-100);
-}
-
-.btn-send {
-    justify-self: flex-end;
-    border: var(--ebony-100) 2px solid;
-    background-color: var(--nile-blue-950);
-    width: 10rem;
-    height: 2rem;
-    border-radius: 0.3rem;
-}
-
-.btn-send:hover {
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: var(--nile-blue-700);
+.index-header button:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
 }
 
 /*-----------------------First section of the main page-------------------------*/
@@ -214,6 +144,41 @@ a label:hover {
     background-color: var(--nile-blue-900);
     cursor: pointer;
 }
+
+.slide-fwd-center img{
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-fwd-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px);
+                transform: translateZ(160px);
+    }
+}
+
+@keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px);
+                transform: translateZ(160px);
+    }
+}
+
 
 /*--------------------------------Titles and Lines-----------------------------*/
 .section-title {
@@ -354,7 +319,7 @@ a label:hover {
     color: var(--nile-blue-50);
     margin: 0 0 0.5rem 1rem;
     align-self: flex-end;
-    
+
 }
 
 .restaurant {
@@ -430,12 +395,12 @@ a label:hover {
     height: 5rem;
 }
 
-.index-footpage-social a{
+.index-footpage-social a {
     color: var(--nile-blue-50);
     margin-left: 1rem;
 }
 
-.index-footpage-social a:hover{
+.index-footpage-social a:hover {
     transition: 0.3s;
     color: var(--nile-blue-500);
 }

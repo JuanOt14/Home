@@ -4,7 +4,7 @@ import "./main.css";
 import Menu from "../../globalComponents/Menu";
 
 //import dependencies
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 
 //import resources
 import logoLight from './assets/Otech-logo-lg.svg'
@@ -19,10 +19,10 @@ import { HtmlFill, CssFill, JavascriptFill, VueFill, ReactFill, NodeFill, Typesc
 
 function Index() {
 
-    const [isVisible, setIsVisible] = useState(false);
+    //const [isVisible, setIsVisible] = useState(false);
 
     // Función para verificar si un elemento está en el viewport
-    const isInViewport = (element) => {
+    /*const isInViewport = (element) => {
         const rect = element.getBoundingClientRect();
         return (
             rect.top >= 0 &&
@@ -30,24 +30,24 @@ function Index() {
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
-    };
+    };*/
 
     // Función para manejar el evento de scroll
-    const handleScroll = () => {
+    /*const handleScroll = () => {
         const box = document.querySelector('.box');
         if (isInViewport(box)) {
             setIsVisible(true); // Establece isVisible en true cuando el elemento está en el viewport
             window.removeEventListener('scroll', handleScroll); // Remueve el event listener para evitar múltiples activaciones
         }
-    };
+    };*/
 
     // Agregar un event listener para el scroll al montar el componente
-    useEffect(() => {
+    /*useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, []);*/
 
     return (
         <div className="index-root">
